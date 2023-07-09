@@ -25,7 +25,7 @@ func callbackMap(cfg *config) error {
 
 func callbackMapb(cfg *config) error {
 	if cfg.previousLocationAreaUrl == nil {
-		return errors.New("You are on the first page")
+		return errors.New("you are on the first page")
 	}
 	
 	resp, err := cfg.pokeapiClient.ListLocationAreas(cfg.previousLocationAreaUrl)
